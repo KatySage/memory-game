@@ -1,24 +1,26 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import MemoryCard from './components/MemoryCard'
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <span>Memory Game</span>
+        <span className="subtitle">Match cards to win</span>
       </header>
+      <div className="row1">
+      <MemoryCard /><MemoryCard /><MemoryCard /><MemoryCard />
+      </div>
+      <div className="row2">
+      <MemoryCard /><MemoryCard /><MemoryCard /><MemoryCard />
+      </div>
+      <div className="row3">
+      <MemoryCard /><MemoryCard /><MemoryCard /><MemoryCard />
+      </div>
+      <div className="row4">
+      <MemoryCard /><MemoryCard /><MemoryCard /><MemoryCard />
+      </div>
     </div>
   );
 }
