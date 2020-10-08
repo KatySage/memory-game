@@ -19,7 +19,7 @@
     transform-style: preserve-3d;
     transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);
     border-radius: 5px;
-    border: 3px solid navy;
+    border: 3px solid turquoise;
     box-shadow: 0 6px 16px rgba(0,0,0,0.15);
 }
 .MemoryCardInner.flipped{
@@ -32,14 +32,21 @@
     backface-visibility: hidden;
 }
 .MemoryCardBack {
-    background: repeating-radial-gradient(
-  circle,
-  purple,
-  purple 10px,
-  #4b026f 10px, 
-  #4b026f 20px
-);
-}
+    background: 
+  /* On "top" */
+  repeating-linear-gradient(
+    45deg,
+    transparent,
+    transparent 10px,
+    #ccc 10px,
+    #ccc 20px
+  ),
+  /* on "bottom" */
+  linear-gradient(
+    to bottom,
+    #eee,
+    #999
+  );}
 img{
     width: 100%;
     padding-top: 13px;
