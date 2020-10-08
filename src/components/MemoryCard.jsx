@@ -1,6 +1,6 @@
 import React from 'react';
 import './MemoryCard.css';
-import logo from '../components/iconfinder_React.png';
+import logo from './iconfinder_React.js_logo_1174949.png';
 
 class MemoryCard extends React.Component {
     render() {

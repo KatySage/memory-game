@@ -41,7 +41,7 @@ class App extends React.Component {
     if(newPickedCards.length === 2){
       let card1Index= newPickedCards[0]
       let card2Index= newPickedCards[1]
-      if(newDeck[card1Index].symbol != newDeck[card2Index].symbol){
+      if(newDeck[card1Index].symbol !== newDeck[card2Index].symbol){
         setTimeout(this.unflipCards.bind(this, card1Index, card2Index), 1000)
       }
       newPickedCards = [];
@@ -84,6 +84,8 @@ class App extends React.Component {
         <span>Memory Game</span>
         <span className="subtitle">Match cards to win</span>
       </header>
+      <br></br>
+      <br></br>
       <div className="row1">
       {cardsJSX.slice(0,4)}
       </div>
